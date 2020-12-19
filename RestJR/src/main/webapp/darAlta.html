@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Lavandería</title>    
+        <meta charset="UTF-8">
+        <meta name="title" content="Título de la WEB">
+        <meta name="description" content="Descripción de la WEB"> 
+        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />    
+        <link href="styles.css" rel="stylesheet" type="text/css"/> 
+        <link rel="icon" type="imagenes" href="imagenes/logo.jpeg">  
+         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="js/cliente.js"></script>
+        
+    </head>
+    <body >
+      <div ng-app="ModuleAltaCliente" ng-controller="ControladorAltaCliente"  class="wrapper">
+        <section>
+          <div class="barra">
+            <h1>CLIENTES</h1>
+          </div>
+            
+          <div class="sidenav">
+            <img src="imagenes/logo.jpeg" alt="Avatar1" class="avatar1">
+            <a href="adm.html">INICIO</a>
+            <a class="active" href="">CLIENTES</a>
+            <a ng-click="cerrarSesion()">CERRAR SESIÓN</a>
+          </div>
+          <!--
+          <div class="datosA">
+            <div id="datos1">
+              <img src="imagenes/a.png" alt="logo de usuario" longdesc=https://images.app.goo.gl/bdPunAv3DXdwpCVR9 height="30px" width="30px">
+            </div>
+            <h1>USUARIOS REGISTRADOS</h1>
+            <h2>6</h2>
+          </div>-->
+          
+           
+        <div class="container2">
+        	 <section>
+          <div class="fomulariocontacto2">
+            <h3>AGREGAR CLIENTE</h3>
+            <form action="" method="POST" enctype="text/plain">
+              <label for="fname" >Nombre Completo*</label>
+              <input type="text" ng-model="datos.nombreC" id="fname" name="NombreCom" alt="Introduce el nombre completo del cliente" placeholder="Nombre completo.." required><br>
+              <label for="lname">Correo Electrónico*</label>
+              <input type="text" ng-model="datos.correo" id="lname" name="CorreoC" alt="Introduce el correo del cliente" placeholder="Ej.: usuario@hotmail.com" required><br>
+              <label for="jname">Télefono*</label>
+              <input type="text" ng-model="datos.telefono" id="jname" name="telefonoC" alt="Introduce el telefono del cliente" placeholder="Télefono 10 dígitos..." required><br>
+              <!--<select id="country" name="country">
+                <option value="usa">México</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>-->
+              <input type="submit" ng-click="altaCliente()" value="Agregar">
+            </form>
+          </div>
+        </section>
+        </div>
+          
+          
+          
+         <div class="titulo">
+         	
+         	<h1>LISTA DE CLIENTES</h1>
+         </div>
+          
+          
+
+    	<table class="center">
+            <thead>
+                <tr>
+                    <th scope="col">Folio</th>
+                    <th scope="col">Nombre Completo</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Télefono</th>
+                    <th></th>
+                    
+                </tr>
+            </thead>
+          <tbody>
+            <tr ng-repeat="cliente in arregloClientes">
+                <td scope="row" ng-bind="cliente.folio"></td>
+                <td ng-bind="cliente.nombreC"></td>
+                <td ng-bind="cliente.correo"></td>
+                <td ng-bind="cliente.telefono"></td>
+                <td>
+                	
+                    <button type="button" class="btn btn-primary" ng-click="eliminarCliente(cliente)">Eliminar</button>
+                </td>
+            </tr>
+            
+          </tbody>
+        </table>
+        
+        <div class="sitio">
+        	<footer class="sitioA">
+        	<span>Copyright &copy; Mi sitio</span>
+      		</footer>
+        </div>
+        
+        
+       
+        </section>      
+      </div>
+    </body>
+</html>

@@ -1,0 +1,387 @@
+@charset "ISO-8859-1";
+* { margin: 0; padding: 0; }
+
+.wrapper{ 
+  border: 0px solid black;
+  color: black;
+  margin: 0px auto;
+  width: 100%;
+  
+}
+
+.wrapper:after{
+  content: "";
+  display: block;
+  clear: both;
+  
+}
+.logo {
+  color: #ffffff;
+  margin: 0px auto;
+  width: 100%; 
+  font-weight: 700;
+  font: italic bold  Georgia, Serif;
+  font-size: 14px;
+  text-shadow:-2px 0px 0 #000000, -30px 10px 0 #0d2033;
+  line-height: 3em;
+  
+}
+.logo img{
+  width: 109px;
+}
+header {
+  overflow: hidden;
+  background: #0D5C63;
+  height: 7em;
+  width: 100%;
+}
+
+header img {
+ float: right;
+  width: 100%;
+  height: 100%;
+  background: #555;
+  margin-right: 100px;
+  
+}
+
+header h1 {
+  display: inline;
+  position: relative;
+  top: 30%;
+  left: 120px;
+}
+
+.container {
+  display: flex;
+  
+}
+
+.box{
+ height: 25em;
+}
+
+
+aside {
+  background: rgb(20, 121, 20);
+  width: 30%;
+}
+
+section {
+  
+  width: 100%;
+}
+
+footer {
+  background: #0B3C49;
+  height: 2em;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+  line-height: 2em;
+  font-weight: bold;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #0B3C49;
+  
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: green;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo{
+  padding-top: 3em;
+  height: 3em;
+  width: 100%;
+}
+.titulo h1{
+    color:black; 
+    font-weight:bold; 
+    padding:2px; 
+    font: italic bold  Georgia, Serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.titulo1{
+    padding-top: 8em;
+    height: 8em;
+    width: 100%;
+    margin: 12px ;
+  }
+  .titulo1 h1{
+      color:black; 
+      font-weight:bold; 
+      padding:5px; 
+      font: italic bold  Georgia, Serif;
+      font-size: 40px;
+      text-align: center;
+  }
+
+.service h2, .service p{
+    color: black;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.service{
+  float: left;
+  background: #ebf2f8;
+  width: 29%;
+  margin: 1%;
+  padding: 1%;
+  
+  /*height: 14px; */
+}
+
+
+
+
+.datos h2{
+    color: black;
+    margin: 10px 0;
+    text-align: center;
+
+}
+.datos li{
+  color: black;
+  margin: 15px 30px;
+}
+
+.datos{
+  border-radius: 15px;
+  float: right;
+  background: #fcfcfc;
+  width: 23%;
+  margin: 4%;
+  padding: 1%;
+  height: 400px; 
+  /*box-sizing: content-box;*/
+  list-style-type: none
+}
+.datos img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100px; 
+  height: 100px;
+  
+  
+}
+
+.datos:hover {
+  background-color: rgb(228, 224, 224);
+  color: black;
+  cursor: pointer; /*Para poner la mano cuando pase por el DIV*/
+  list-style-type: none
+}
+
+
+
+
+
+
+
+
+
+
+
+.datosdos h2{
+    color: black;
+    margin: 10px 0;
+    text-align: center;
+
+}
+.datosdos li{
+  color: black;
+  margin: 15px 30px;
+}
+
+.datosdos{
+  border-radius: 15px;
+  float: right;
+  background: #fcfcfc;
+  width: 84%;
+  margin: 7%;
+  padding: 1%;
+  height: 550px; 
+  /*box-sizing: content-box;*/
+  list-style-type: none
+}
+.datosdos img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100px; 
+  height: 100px;
+  
+  
+}
+/*
+.datosdos:hover {
+  background-color: rgb(228, 224, 224);
+  color: black;
+  cursor: pointer; /*Para poner la mano cuando pase por el DIV
+  list-style-type: none
+}*/
+
+
+
+
+
+.datosuno h2{
+    color: black;
+    margin: 10px 0;
+    text-align: center;
+
+}
+.datosuno li{
+  color: black;
+  margin: 15px 30px;
+}
+
+.datosuno{
+  border-radius: 15px;
+  float: right;
+  background: #fcfcfc;
+  width: 25%;
+  margin: 3%;
+  padding: 1%;
+  height: 150px; 
+  
+}
+.datosuno img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100px; 
+  height: 100px;
+  
+  
+}
+
+.datosuno:hover {
+  background-color: rgb(228, 224, 224);
+  color: black;
+  cursor: pointer; /*Para poner la mano cuando pase por el DIV*/
+  list-style-type: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.datosA{
+  border-radius: 20px;
+  
+  background: #fcfcfc;
+  /*width: 27%;*/
+  width: 200px;
+  margin-left: auto;
+  margin-right:auto;
+  margin: 6%;
+  padding: 2%;
+  height: 400px; 
+  /*box-sizing: content-box;*/
+  list-style-type: none
+  
+  
+  /*width: 200px;
+  margin-left: auto;
+  margin-right: auto;*/
+  
+}
+.datosA img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 150px; 
+  height: 150px;
+  
+  
+}
+
+.datosA:hover {
+  background-color: rgb(228, 224, 224);
+  color: black;
+  cursor: pointer; /*Para poner la mano cuando pase por el DIV*/
+  list-style-type: none
+}
+
+
+.datosA h1{
+  font-size: 30px;
+  text-align: center;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.datosA h2{
+  font-size: 50px;
+  text-align: center;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+

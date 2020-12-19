@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Lavandería</title>    
+        <meta charset="UTF-8">
+        <meta name="title" content="Título de la WEB">
+        <meta name="description" content="Descripción de la WEB">    
+        <link href="styles.css" rel="stylesheet" type="text/css"/> 
+        <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+        <link rel="icon" type="imagenes" href="imagenes/logo.jpeg">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="js/admin.js"></script>  
+    </head>
+    <body>
+        <div ng-app="ModuleAdmin" ng-controller="ControladorAdmin" class="wrapper">
+            <section>
+                <div class="barra">
+                    <h1>LAVANDERÍA LAVAMATTI</h1>
+                </div>
+            
+                <div class="sidenav">
+                    <img src="imagenes/logo.jpeg" alt="Avatar1" class="avatar1">
+                    <a class="active" href="">INICIO</a>
+                    <a href="darAlta.html">CLIENTES</a>
+                    <a  ng-click="cerrarSesion()">CERRAR SESIÓN</a>
+                </div>
+
+                <div class="datos">
+                    <div id="datos1">
+                        <img src="imagenes/n.png" alt="logo de los serivios de la lavandería" longdesc=https://images.app.goo.gl/EBH1as31LNRmNEft7 height="30px" width="30px">
+                    </div>
+                    <h2>EDREDONES</h2>
+                    <li>Individual ......................................$45</li>
+                    <li>Matromonial .................................$55</li>
+                    <li>Queen Size ....................................$65</li>
+                    <li>Super King Size ............................$75</li>
+                    <li>Jumbo King Size ...........................$80</li>
+                </div>
+                <div class="datos">
+                    <div id="datos2">
+                        <img src="imagenes/n.png" alt="logo de los serivios de la lavandería" longdesc=https://images.app.goo.gl/EBH1as31LNRmNEft7 height="30px" width="30px">
+                    </div>
+                    <h2>COBIJAS</h2>
+                    <li>(Cobija, colcha, cobertor SIN BORREGA)    </li>
+                    <li>Individual ......................................$35</li>
+                    <li>Matrimonial ..................................$40</li>
+                    <li>Queen ............................................$45</li>
+                    <li>King Size ......................................$55</li>
+                </div>
+
+                <div class="datos">
+                    <div id="datos3">
+                        <img src="imagenes/o.png" alt="logo de un telefono para contactarnos" longdesc=https://images.app.goo.gl/2uTdSdCGyCUwsmBA8 height="30px" width="30px">
+                    </div>
+                    <h2>OFERTAS</h2>
+                    <li>Kilo.................................................$12</li>
+                    <li>(ropa, toallas, sabana sola)</li>
+                    <li>3 Kilos de toallas...........................$26</li>
+                    <li>2 Cobijas Matrimoniales................$35</li>
+                    <li>4 Almohadas chicas.......................$62</li>
+                </div>
+
+                <div class="datos">
+                    <div id="datos7">
+                        <img src="imagenes/n.png" alt="logo de los serivios de la lavandería" longdesc=https://images.app.goo.gl/EBH1as31LNRmNEft7 height="30px" width="30px">
+                    </div>
+                    <h2>LAVADO DE CALZADO</h2>
+                    <li>Tenis Sport ....................................$40</li>
+                    <li>Botas (etc.) ....................................$60</li>
+                    <h2>ROPA DE TRABAJO</h2>
+                    <li>Ropa de Trabajo ............................$14</li>
+                    <li>(Uniformes de trabajo, overol, etc.)</li>
+                </div>
+
+                <div class="datos">
+                    <div id="datos5">
+                        <img src="imagenes/n.png" alt="logo de los serivios de la lavandería" longdesc=https://images.app.goo.gl/EBH1as31LNRmNEft7 height="30px" width="30px">
+                    </div>
+                    <h2>ALMOHADA</h2>
+                    <li>Chica .............................................$35</li>
+                    <li>(cojín chico, etc.)</li>
+                    <li>Grande ..........................................$50</li>
+                    <li>(cojín grande, almohada xg,etc.)</li>
+                </div>
+
+                <div class="datos">
+                    <div id="datos6">
+                        <img src="imagenes/n.png" alt="logo de los serivios de la lavandería" longdesc=https://images.app.goo.gl/EBH1as31LNRmNEft7 height="30px" width="30px">
+                    </div>
+                    <h2>JUEGO DE SÁBANAS</h2>
+                    <li>Juego Sábanas ...............................$20</li>
+                    <li>(Sábana lisa, Sábana de cajón y 2 fundas de almohadas)</li>
+                    <h2>JUEGO DE SÁBANAS MAYOREO</h2>
+                    <li>Juego Sábanas Mayoreo ...............$15</li>
+                    <li>(a partir de 3 juegos de sábanas)</li>
+                </div>
+                
+                 <div class="datos">
+                    <div id="datos4">
+                        <img src="imagenes/n.png" alt="logo de los serivios de la lavandería" longdesc=https://images.app.goo.gl/EBH1as31LNRmNEft7 height="30px" width="30px">
+                    </div>
+                    <h2>PLANCHADO POR DOCENA</h2>
+                    <li>Planchado por docena ...................$96</li>
+                    <h2>PLANCHADO POR PIEZA</h2>
+                    <li>Planchado por pieza ........................$9</li>
+                </div>
+              
+                <div class="datos">
+                    <div id="datos8">
+                        <img src="imagenes/n.png" alt="logo de los serivios de la lavandería" longdesc=https://images.app.goo.gl/EBH1as31LNRmNEft7 height="30px" width="30px">
+                    </div>
+                    <h2>SERVICIO EXPRESS KILO</h2>
+                    <li>Servicio Express Kilo ...................$15</li>
+                    <h2>SECADO KILO</h2>
+                    <li>Secado Kilo ....................................$9</li>
+                </div>
+
+                <div class="datos">
+                    <div id="datos9">
+                        <img src="imagenes/n.png" alt="logo de los serivios de la lavandería" longdesc=https://images.app.goo.gl/EBH1as31LNRmNEft7 height="30px" width="30px">
+                    </div>
+                    <h2>CHAMARRA</h2>
+                    <li>Peso Ligero ...................................$35</li>
+                    <li>(rompevientos, sudaderas gruesas, chalecos sin borrega, etc.)</li>
+                    <li>Peso medio ....................................$50</li>
+                    <li>(Abrigos, sacos, Invernales, Chaleco grueso y/o borrega, cazadoras, etc.)</li>
+                </div>
+            </section>   
+        </div>
+    </body>
+</html>
